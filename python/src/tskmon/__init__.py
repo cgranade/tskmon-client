@@ -134,7 +134,6 @@ class TskmonClient(object):
             params['max_progress'] = max_progress
 
         body = json.dumps(params)
-        print body
 
         conn = server_connection()
         conn.request('POST', api_path('tasks/'),
